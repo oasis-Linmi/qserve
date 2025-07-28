@@ -301,6 +301,8 @@ share_to_reg_one_stage_B(int8_t *src, int8_t *dst, int8_t *zeros, int8_t *scales
     uint32_t ptr_1 = loaded_1 * scale_0;
     ptr[0] = __vadd4(ptr_0, zero_point_0);
     ptr[1] = __vadd4(ptr_1, zero_point_0);
+    // ptr[0] = (ptr_0 + zero_point_0) ^ 0x7F7F7F7F;
+    // ptr[1] = (ptr_1 + zero_point_0) ^ 0x7F7F7F7F;
 
     uint32_t scale_1 = (packed_scales & 0xFF00) >> 8;
     uint32_t zero_point_1 = __byte_perm(packed_zeros, 0, 0x00001111);
@@ -308,6 +310,8 @@ share_to_reg_one_stage_B(int8_t *src, int8_t *dst, int8_t *zeros, int8_t *scales
     uint32_t ptr_3 = loaded_3 * scale_1;
     ptr[2] = __vadd4(ptr_2, zero_point_1);
     ptr[3] = __vadd4(ptr_3, zero_point_1);
+    // ptr[2] = (ptr_2 + zero_point_1) ^ 0x7F7F7F7F;
+    // ptr[3] = (ptr_3 + zero_point_1) ^ 0x7F7F7F7F;
 
     uint32_t scale_2 = (packed_scales & 0xFF0000) >> 16;
     uint32_t zero_point_2 = __byte_perm(packed_zeros, 0, 0x00002222);
@@ -315,6 +319,8 @@ share_to_reg_one_stage_B(int8_t *src, int8_t *dst, int8_t *zeros, int8_t *scales
     uint32_t ptr_5 = loaded_5 * scale_2;
     ptr[4] = __vadd4(ptr_4, zero_point_2);
     ptr[5] = __vadd4(ptr_5, zero_point_2);
+    // ptr[4] = (ptr_4 + zero_point_2) ^ 0x7F7F7F7F;
+    // ptr[5] = (ptr_5 + zero_point_2) ^ 0x7F7F7F7F;
 
     uint32_t scale_3 = (packed_scales & 0xFF000000) >> 24;
     uint32_t zero_point_3 = __byte_perm(packed_zeros, 0, 0x00003333);
@@ -322,6 +328,8 @@ share_to_reg_one_stage_B(int8_t *src, int8_t *dst, int8_t *zeros, int8_t *scales
     uint32_t ptr_7 = loaded_7 * scale_3;
     ptr[6] = __vadd4(ptr_6, zero_point_3);
     ptr[7] = __vadd4(ptr_7, zero_point_3);
+    // ptr[6] = (ptr_6 + zero_point_3) ^ 0x7F7F7F7F;
+    // ptr[7] = (ptr_7 + zero_point_3) ^ 0x7F7F7F7F;
   }
 }
 

@@ -48,11 +48,23 @@ def process_requests(
     time_lis = []
     num_tokens = 0
     torch.cuda.synchronize()
-    st = time.time()
-
+    
+    st_prefill = time.time()
     while engine.has_unfinished_requests():
+        
+
+        if (iter == 2):
+            st_decode = time.time()
+
         ### Schedule iteration 1 (context stage)
         requests_outputs = engine.step()
+
+        if (iter == 1):
+            torch.cuda.synchronize() 
+            ed_prefill = time.time()
+            print(f"Prefill time: {ed_prefill - st_prefill}")
+        # print(requests_outputs)
+        # print(len(requests_outputs))
         num_tokens += len(requests_outputs)
         # torch.cuda.synchronize()
         if len(requests_outputs) == 0:
@@ -62,8 +74,9 @@ def process_requests(
         if engine.profiling_mode and iter == generation_len + 1:
             break
     torch.cuda.synchronize()
-    ed = time.time()
-    time_lis.append(ed - st)
+    ed_decode = time.time()
+    time_lis.append(ed_decode - st_decode)
+    print(f"Decode time: {ed_decode - st_decode}")
     return time_lis, num_tokens
 
 
@@ -78,8 +91,8 @@ def main(args: argparse.Namespace):
 
     batch_size = int(os.environ.get("GLOBAL_BATCH_SIZE"))
     prompt_len = 1024
-    generation_len = 512
-    rounds = 3
+    generation_len = 2
+    rounds = 1
 
     with open("results.csv", "a") as file:
         print("=" * 50, file=file)
@@ -87,7 +100,6 @@ def main(args: argparse.Namespace):
             f"{args.model}: Batch={batch_size}, Input={prompt_len}, Output={generation_len}",
             file=file,
         )
-
     with torch.no_grad():
         for rnd in range(rounds):
             if rnd < rounds - 1:
@@ -104,8 +116,8 @@ def main(args: argparse.Namespace):
             del engine
             torch.cuda.empty_cache()
             gc.collect()
-
-            throughput = num_tokens / sum(time_lis)
+            throughput = num_tokens / sum(time_lis) * 511 / 512
+            
             print(f"Round {rnd} Throughput:", throughput, "tokens / second.")
             with open("results.csv", "a") as file:
                 print(

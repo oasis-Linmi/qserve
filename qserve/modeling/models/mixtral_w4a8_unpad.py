@@ -98,14 +98,14 @@ class MixtralAttention(nn.Module):
             hidden_size,
             (self.total_num_heads + 2 * self.total_num_kv_heads * num_kv_heads_replicas)
             * self.head_dim,
-            bias=args.attention_bias,
+            bias=False,
             group_size=128,
         )
 
         self.o_proj = W4A8OF16LinearDynamicInputScale(
             self.total_num_heads * self.head_dim,
             hidden_size,
-            bias=args.attention_bias,
+            bias=False,
             group_size=128,
         )
 

@@ -48,9 +48,12 @@ class ActivationBuffer:
         assert (
             self.batched_seq_len > 0
         ), f"batched_seq_len is expected to be greater than 0 to allocate activation buffer. Current: {self.batched_seq_len}."
-
+        # print(model.q_size)
+        # print(model)
         self.q_size = model.q_size
+        # self.q_size = 32 * 128
         self.kv_size = model.kv_size
+        # self.kv_size = 8 * 128
         self.intermediate_size = model.config.intermediate_size
         self.hidden_size = model.config.hidden_size
 
