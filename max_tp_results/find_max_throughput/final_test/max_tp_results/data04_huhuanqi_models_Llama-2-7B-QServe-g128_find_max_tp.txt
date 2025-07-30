@@ -1,0 +1,1815 @@
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+Traceback (most recent call last):
+  File "/data03/huhuanqi/projects/qserve/qserve_benchmark.py", line 11, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+==================================================
+Benchmarking failed for model: /data04/huhuanqi/models/Llama-2-7B-QServe-g128 with batch size 4
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+Traceback (most recent call last):
+  File "/data03/huhuanqi/projects/qserve/qserve_benchmark.py", line 11, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+==================================================
+Benchmarking failed for model: /data04/huhuanqi/models/Llama-2-7B-QServe-g128 with batch size 4
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+Traceback (most recent call last):
+  File "/data03/huhuanqi/projects/qserve/qserve_benchmark.py", line 11, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+==================================================
+Benchmarking failed for model: /data04/huhuanqi/models/Llama-2-7B-QServe-g128 with batch size 4
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+Traceback (most recent call last):
+  File "/data03/huhuanqi/projects/qserve/qserve_benchmark.py", line 11, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+==================================================
+Benchmarking failed for model: /data04/huhuanqi/models/Llama-2-7B-QServe-g128 with batch size 4
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:16:35 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:16:39 model_runner.py:310] # GPU blocks: 100, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([4, 2, 24])
+Prefill time: 0.6393547058105469
+Decode time: 3.2044150829315186
+Round 0 Throughput: 637.8699223104619 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:16:43 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:16:46 model_runner.py:310] # GPU blocks: 100, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([4, 2, 24])
+Prefill time: 0.16776514053344727
+Decode time: 3.1901211738586426
+Round 1 Throughput: 640.7280127004266 tokens / second.
+INFO 04-14 19:16:49 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:16:51 model_runner.py:310] # GPU blocks: 100, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([4, 2, 24])
+Prefill time: 0.16771554946899414
+Decode time: 3.183295488357544
+Round 2 Throughput: 642.101874449181 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:16:57 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:17:01 model_runner.py:310] # GPU blocks: 200, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([8, 2, 24])
+Prefill time: 0.7922806739807129
+Decode time: 3.3568034172058105
+Round 0 Throughput: 1217.8252616898355 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:17:06 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:17:08 model_runner.py:310] # GPU blocks: 200, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([8, 2, 24])
+Prefill time: 0.3272678852081299
+Decode time: 3.3348119258880615
+Round 1 Throughput: 1225.8562374282515 tokens / second.
+INFO 04-14 19:17:12 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:17:14 model_runner.py:310] # GPU blocks: 200, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([8, 2, 24])
+Prefill time: 0.32707929611206055
+Decode time: 3.325507879257202
+Round 2 Throughput: 1229.2859161449683 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:17:20 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:17:24 model_runner.py:310] # GPU blocks: 300, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([12, 2, 24])
+Prefill time: 0.9661684036254883
+Decode time: 3.5352277755737305
+Round 0 Throughput: 1734.541701207595 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:17:29 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:17:31 model_runner.py:310] # GPU blocks: 300, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([12, 2, 24])
+Prefill time: 1.02876877784729
+Decode time: 3.5139005184173584
+Round 1 Throughput: 1745.0693233517661 tokens / second.
+INFO 04-14 19:17:36 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:17:38 model_runner.py:310] # GPU blocks: 300, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([12, 2, 24])
+Prefill time: 0.48481225967407227
+Decode time: 3.508774995803833
+Round 2 Throughput: 1747.6184729238264 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:17:44 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:17:49 model_runner.py:310] # GPU blocks: 400, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([16, 2, 24])
+Prefill time: 1.1308276653289795
+Decode time: 3.7769477367401123
+Round 0 Throughput: 2164.7109173548465 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:17:55 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:17:57 model_runner.py:310] # GPU blocks: 400, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([16, 2, 24])
+Prefill time: 0.6425747871398926
+Decode time: 3.7475409507751465
+Round 1 Throughput: 2181.697306952407 tokens / second.
+INFO 04-14 19:18:01 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:18:03 model_runner.py:310] # GPU blocks: 400, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([16, 2, 24])
+Prefill time: 0.6425745487213135
+Decode time: 3.7448971271514893
+Round 2 Throughput: 2183.237542287036 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:18:11 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:18:15 model_runner.py:310] # GPU blocks: 500, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([20, 2, 24])
+Prefill time: 1.3956220149993896
+Decode time: 4.255213499069214
+Round 0 Throughput: 2401.759630212567 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:18:21 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:18:23 model_runner.py:310] # GPU blocks: 500, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([20, 2, 24])
+Prefill time: 0.7971320152282715
+Decode time: 4.19370174407959
+Round 1 Throughput: 2436.9878030615714 tokens / second.
+INFO 04-14 19:18:28 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:18:30 model_runner.py:310] # GPU blocks: 500, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([20, 2, 24])
+Prefill time: 0.7962381839752197
+Decode time: 4.062110900878906
+Round 2 Throughput: 2515.9332793668264 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:18:38 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:18:42 model_runner.py:310] # GPU blocks: 600, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([24, 2, 24])
+Prefill time: 1.6643562316894531
+Decode time: 4.278316497802734
+Round 0 Throughput: 2866.5480934611937 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:18:49 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:18:51 model_runner.py:310] # GPU blocks: 600, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([24, 2, 24])
+Prefill time: 0.9543864727020264
+Decode time: 4.270640134811401
+Round 1 Throughput: 2871.7006380453545 tokens / second.
+INFO 04-14 19:18:57 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:18:59 model_runner.py:310] # GPU blocks: 600, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([24, 2, 24])
+Prefill time: 0.9542791843414307
+Decode time: 4.273525953292847
+Round 2 Throughput: 2869.761441497814 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:19:06 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:19:10 model_runner.py:310] # GPU blocks: 700, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([28, 2, 24])
+Prefill time: 1.8188931941986084
+Decode time: 4.544050931930542
+Round 0 Throughput: 3148.732312716671 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:19:18 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:19:20 model_runner.py:310] # GPU blocks: 700, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([28, 2, 24])
+Prefill time: 1.6470801830291748
+Decode time: 4.521911859512329
+Round 1 Throughput: 3164.1483612515754 tokens / second.
+INFO 04-14 19:19:26 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:19:28 model_runner.py:310] # GPU blocks: 700, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([28, 2, 24])
+Prefill time: 1.1125617027282715
+Decode time: 4.514358758926392
+Round 2 Throughput: 3169.4423868524664 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:19:36 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:19:40 model_runner.py:310] # GPU blocks: 800, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([32, 2, 24])
+Prefill time: 2.0842113494873047
+Decode time: 4.761284351348877
+Round 0 Throughput: 3434.367450742038 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:19:49 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:19:51 model_runner.py:310] # GPU blocks: 800, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([32, 2, 24])
+Prefill time: 1.2701592445373535
+Decode time: 4.763607978820801
+Round 1 Throughput: 3432.692209917708 tokens / second.
+INFO 04-14 19:19:57 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:19:59 model_runner.py:310] # GPU blocks: 800, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([32, 2, 24])
+Prefill time: 1.2708957195281982
+Decode time: 4.761610984802246
+Round 2 Throughput: 3434.13186255473 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:20:07 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:20:11 model_runner.py:310] # GPU blocks: 900, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([36, 2, 24])
+Prefill time: 1.8888475894927979
+Decode time: 5.525755167007446
+Round 0 Throughput: 3329.137727606311 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:20:19 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:20:21 model_runner.py:310] # GPU blocks: 900, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([36, 2, 24])
+Prefill time: 1.426563024520874
+Decode time: 5.486020088195801
+Round 1 Throughput: 3353.25057222857 tokens / second.
+INFO 04-14 19:20:28 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:20:30 model_runner.py:310] # GPU blocks: 900, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([36, 2, 24])
+Prefill time: 1.4264044761657715
+Decode time: 5.481909275054932
+Round 2 Throughput: 3355.7651316321103 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:20:39 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:20:43 model_runner.py:310] # GPU blocks: 1000, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([40, 2, 24])
+Prefill time: 2.0724363327026367
+Decode time: 5.729815483093262
+Round 0 Throughput: 3567.3051008905077 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:20:52 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:20:54 model_runner.py:310] # GPU blocks: 1000, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([40, 2, 24])
+Prefill time: 1.5824007987976074
+Decode time: 5.732327222824097
+Round 1 Throughput: 3565.742011135575 tokens / second.
+INFO 04-14 19:21:01 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:21:03 model_runner.py:310] # GPU blocks: 1000, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([40, 2, 24])
+Prefill time: 1.582202434539795
+Decode time: 5.7464423179626465
+Round 2 Throughput: 3556.983411476552 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:21:13 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:21:17 model_runner.py:310] # GPU blocks: 1100, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([44, 2, 24])
+Prefill time: 2.2049527168273926
+Decode time: 5.973813533782959
+Round 0 Throughput: 3763.7599287036755 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:21:25 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:21:27 model_runner.py:310] # GPU blocks: 1100, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([44, 2, 24])
+Prefill time: 2.2710812091827393
+Decode time: 6.101120948791504
+Round 1 Throughput: 3685.2244347743313 tokens / second.
+INFO 04-14 19:21:36 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:21:38 model_runner.py:310] # GPU blocks: 1100, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([44, 2, 24])
+Prefill time: 1.7405569553375244
+Decode time: 5.961520433425903
+Round 2 Throughput: 3771.5210827649776 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:21:48 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:21:52 model_runner.py:310] # GPU blocks: 1200, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([48, 2, 24])
+Prefill time: 2.3819844722747803
+Decode time: 6.15849494934082
+Round 0 Throughput: 3982.791282897029 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:22:03 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:22:04 model_runner.py:310] # GPU blocks: 1200, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([48, 2, 24])
+Prefill time: 1.8985869884490967
+Decode time: 6.134480237960815
+Round 1 Throughput: 3998.3827559208894 tokens / second.
+INFO 04-14 19:22:13 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:22:15 model_runner.py:310] # GPU blocks: 1200, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([48, 2, 24])
+Prefill time: 1.9132788181304932
+Decode time: 6.127995014190674
+Round 2 Throughput: 4002.614222629132 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:22:25 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:22:29 model_runner.py:310] # GPU blocks: 1300, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([52, 2, 24])
+Prefill time: 2.5052225589752197
+Decode time: 6.397844314575195
+Round 0 Throughput: 4153.273930011898 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:22:38 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:22:40 model_runner.py:310] # GPU blocks: 1300, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([52, 2, 24])
+Prefill time: 2.052513599395752
+Decode time: 6.405898094177246
+Round 1 Throughput: 4148.052249559369 tokens / second.
+INFO 04-14 19:22:49 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:22:51 model_runner.py:310] # GPU blocks: 1300, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([52, 2, 24])
+Prefill time: 2.0523509979248047
+Decode time: 6.393171310424805
+Round 2 Throughput: 4156.309710748918 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:23:02 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:23:06 model_runner.py:310] # GPU blocks: 1400, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([56, 2, 24])
+Prefill time: 2.7005186080932617
+Decode time: 6.63683009147644
+Round 0 Throughput: 4311.696940494379 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:23:15 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:23:17 model_runner.py:310] # GPU blocks: 1400, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([56, 2, 24])
+Prefill time: 2.2096898555755615
+Decode time: 6.624569416046143
+Round 1 Throughput: 4319.676978655525 tokens / second.
+INFO 04-14 19:23:26 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:23:28 model_runner.py:310] # GPU blocks: 1400, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([56, 2, 24])
+Prefill time: 2.2097091674804688
+Decode time: 6.6121134757995605
+Round 2 Throughput: 4327.814412855286 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:23:39 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:23:43 model_runner.py:310] # GPU blocks: 1500, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([60, 2, 24])
+Prefill time: 2.8964059352874756
+Decode time: 6.898247480392456
+Round 0 Throughput: 4444.607139298471 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:23:53 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:23:55 model_runner.py:310] # GPU blocks: 1500, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([60, 2, 24])
+Prefill time: 2.3681983947753906
+Decode time: 6.8430845737457275
+Round 1 Throughput: 4480.435638283732 tokens / second.
+INFO 04-14 19:24:05 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:24:07 model_runner.py:310] # GPU blocks: 1500, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([60, 2, 24])
+Prefill time: 2.3679726123809814
+Decode time: 6.84491491317749
+Round 2 Throughput: 4479.237563782553 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:24:19 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:24:23 model_runner.py:310] # GPU blocks: 1600, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([64, 2, 24])
+Prefill time: 2.9917244911193848
+Decode time: 7.108133792877197
+Round 0 Throughput: 4600.9263405778165 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:24:34 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:24:36 model_runner.py:310] # GPU blocks: 1600, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([64, 2, 24])
+Prefill time: 2.526651382446289
+Decode time: 7.09565544128418
+Round 1 Throughput: 4609.017485505356 tokens / second.
+INFO 04-14 19:24:47 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:24:49 model_runner.py:310] # GPU blocks: 1600, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([64, 2, 24])
+Prefill time: 2.526151418685913
+Decode time: 7.093832969665527
+Round 2 Throughput: 4610.201584932721 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:25:01 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:25:05 model_runner.py:310] # GPU blocks: 1700, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([68, 2, 24])
+Prefill time: 3.1562678813934326
+Decode time: 8.611582279205322
+Round 0 Throughput: 4035.030830966705 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:25:18 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:25:20 model_runner.py:310] # GPU blocks: 1700, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([68, 2, 24])
+Prefill time: 2.6810951232910156
+Decode time: 8.577414989471436
+Round 1 Throughput: 4051.1039797715644 tokens / second.
+INFO 04-14 19:25:31 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:25:33 model_runner.py:310] # GPU blocks: 1700, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([68, 2, 24])
+Prefill time: 2.6810853481292725
+Decode time: 8.564686059951782
+Round 2 Throughput: 4057.12477454143 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:25:47 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:25:51 model_runner.py:310] # GPU blocks: 1800, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([72, 2, 24])
+Prefill time: 3.6412856578826904
+Decode time: 8.757411003112793
+Round 0 Throughput: 4201.241666849072 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:26:04 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:26:06 model_runner.py:310] # GPU blocks: 1800, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([72, 2, 24])
+Prefill time: 2.8379602432250977
+Decode time: 8.763286113739014
+Round 1 Throughput: 4198.425056819471 tokens / second.
+INFO 04-14 19:26:18 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:26:20 model_runner.py:310] # GPU blocks: 1800, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([72, 2, 24])
+Prefill time: 2.8375134468078613
+Decode time: 8.753633499145508
+Round 2 Throughput: 4203.054651944416 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:26:34 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:26:38 model_runner.py:310] # GPU blocks: 1900, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([76, 2, 24])
+Prefill time: 3.8798601627349854
+Decode time: 8.993868112564087
+Round 0 Throughput: 4318.053090610435 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:26:51 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:26:53 model_runner.py:310] # GPU blocks: 1900, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([76, 2, 24])
+Prefill time: 2.998109817504883
+Decode time: 8.972929239273071
+Round 1 Throughput: 4328.129528763145 tokens / second.
+INFO 04-14 19:27:05 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:27:07 model_runner.py:310] # GPU blocks: 1900, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([76, 2, 24])
+Prefill time: 3.017045497894287
+Decode time: 8.980321407318115
+Round 2 Throughput: 4324.566820999561 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:27:22 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:27:27 model_runner.py:310] # GPU blocks: 2000, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([80, 2, 24])
+Prefill time: 3.9751715660095215
+Decode time: 9.230008840560913
+Round 0 Throughput: 4429.031510820925 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:27:40 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:27:42 model_runner.py:310] # GPU blocks: 2000, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([80, 2, 24])
+Prefill time: 3.154816150665283
+Decode time: 9.220304012298584
+Round 1 Throughput: 4433.693286628277 tokens / second.
+INFO 04-14 19:27:55 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:27:57 model_runner.py:310] # GPU blocks: 2000, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([80, 2, 24])
+Prefill time: 3.1539692878723145
+Decode time: 9.213000535964966
+Round 2 Throughput: 4437.208034496032 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:28:12 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:28:16 model_runner.py:310] # GPU blocks: 2100, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([84, 2, 24])
+Prefill time: 3.7822141647338867
+Decode time: 9.47482442855835
+Round 0 Throughput: 4530.321413726833 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:28:29 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:28:31 model_runner.py:310] # GPU blocks: 2100, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([84, 2, 24])
+Prefill time: 3.3074581623077393
+Decode time: 9.4510657787323
+Round 1 Throughput: 4541.710004451744 tokens / second.
+INFO 04-14 19:28:44 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:28:46 model_runner.py:310] # GPU blocks: 2100, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([84, 2, 24])
+Prefill time: 3.3069911003112793
+Decode time: 9.447583198547363
+Round 2 Throughput: 4543.384175394178 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:29:01 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:29:05 model_runner.py:310] # GPU blocks: 2200, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([88, 2, 24])
+Prefill time: 3.9553534984588623
+Decode time: 9.718112230300903
+Round 0 Throughput: 4627.236127176075 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:29:19 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:29:21 model_runner.py:310] # GPU blocks: 2200, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([88, 2, 24])
+Prefill time: 3.4658427238464355
+Decode time: 9.701305866241455
+Round 1 Throughput: 4635.252266035583 tokens / second.
+INFO 04-14 19:29:35 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:29:37 model_runner.py:310] # GPU blocks: 2200, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([88, 2, 24])
+Prefill time: 3.4657232761383057
+Decode time: 9.883534669876099
+Round 2 Throughput: 4549.789270943462 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:29:53 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:29:57 model_runner.py:310] # GPU blocks: 2300, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([92, 2, 24])
+Prefill time: 4.499777555465698
+Decode time: 9.954222202301025
+Round 0 Throughput: 4722.8200299901555 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:30:12 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:30:14 model_runner.py:310] # GPU blocks: 2300, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([92, 2, 24])
+Prefill time: 3.6237199306488037
+Decode time: 10.155853271484375
+Round 1 Throughput: 4629.054668601838 tokens / second.
+INFO 04-14 19:30:28 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:30:30 model_runner.py:310] # GPU blocks: 2300, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([92, 2, 24])
+Prefill time: 3.623157262802124
+Decode time: 9.936254501342773
+Round 2 Throughput: 4731.360292114786 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:30:46 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:30:51 model_runner.py:310] # GPU blocks: 2400, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([96, 2, 24])
+Prefill time: 4.2549803256988525
+Decode time: 10.191304445266724
+Round 0 Throughput: 4813.51531233901 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:31:06 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:31:08 model_runner.py:310] # GPU blocks: 2400, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([96, 2, 24])
+Prefill time: 3.7809531688690186
+Decode time: 10.17686128616333
+Round 1 Throughput: 4820.346727796865 tokens / second.
+INFO 04-14 19:31:22 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:31:24 model_runner.py:310] # GPU blocks: 2400, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([96, 2, 24])
+Prefill time: 3.7811694145202637
+Decode time: 10.164695501327515
+Round 2 Throughput: 4826.116039933833 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:31:40 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:31:45 model_runner.py:310] # GPU blocks: 2500, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([100, 2, 24])
+Prefill time: 4.375419616699219
+Decode time: 10.380734205245972
+Round 0 Throughput: 4922.580521729984 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:32:01 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:32:03 model_runner.py:310] # GPU blocks: 2500, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([100, 2, 24])
+Prefill time: 3.935067892074585
+Decode time: 10.368100881576538
+Round 1 Throughput: 4928.578587695021 tokens / second.
+INFO 04-14 19:32:18 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:32:20 model_runner.py:310] # GPU blocks: 2500, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([100, 2, 24])
+Prefill time: 3.9361636638641357
+Decode time: 10.368921995162964
+Round 2 Throughput: 4928.188294196622 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:32:36 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:32:40 model_runner.py:310] # GPU blocks: 2600, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([104, 2, 24])
+Prefill time: 4.545654296875
+Decode time: 10.601027727127075
+Round 0 Throughput: 5013.098858708698 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:32:56 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:32:57 model_runner.py:310] # GPU blocks: 2600, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([104, 2, 24])
+Prefill time: 4.098556280136108
+Decode time: 10.578967571258545
+Round 1 Throughput: 5023.5525954710565 tokens / second.
+INFO 04-14 19:33:12 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:33:14 model_runner.py:310] # GPU blocks: 2600, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([104, 2, 24])
+Prefill time: 4.0927510261535645
+Decode time: 10.584354877471924
+Round 2 Throughput: 5020.995669099623 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:33:32 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:33:35 model_runner.py:310] # GPU blocks: 2700, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([108, 2, 24])
+Prefill time: 4.690983772277832
+Decode time: 10.953111171722412
+Round 0 Throughput: 5038.568415381244 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:33:52 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:33:54 model_runner.py:310] # GPU blocks: 2700, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([108, 2, 24])
+Prefill time: 4.259444713592529
+Decode time: 10.844712257385254
+Round 1 Throughput: 5088.931701476629 tokens / second.
+INFO 04-14 19:34:09 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:34:11 model_runner.py:310] # GPU blocks: 2700, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([108, 2, 24])
+Prefill time: 4.261711597442627
+Decode time: 10.857324361801147
+Round 2 Throughput: 5083.020287591807 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:34:29 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:34:34 model_runner.py:310] # GPU blocks: 2800, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([112, 2, 24])
+Prefill time: 4.8829193115234375
+Decode time: 11.252337217330933
+Round 0 Throughput: 5086.232210660275 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:34:51 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:34:53 model_runner.py:310] # GPU blocks: 2800, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([112, 2, 24])
+Prefill time: 4.4094297885894775
+Decode time: 11.082099676132202
+Round 1 Throughput: 5164.364305733687 tokens / second.
+INFO 04-14 19:35:09 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:35:11 model_runner.py:310] # GPU blocks: 2800, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([112, 2, 24])
+Prefill time: 4.932487487792969
+Decode time: 11.074992895126343
+Round 2 Throughput: 5167.678258754052 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:35:30 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:35:34 model_runner.py:310] # GPU blocks: 2900, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([116, 2, 24])
+Prefill time: 5.016622543334961
+Decode time: 11.385204315185547
+Round 0 Throughput: 5206.406346255716 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:35:52 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:35:54 model_runner.py:310] # GPU blocks: 2900, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([116, 2, 24])
+Prefill time: 4.563668727874756
+Decode time: 11.266146183013916
+Round 1 Throughput: 5261.426492882813 tokens / second.
+INFO 04-14 19:36:11 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:36:13 model_runner.py:310] # GPU blocks: 2900, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([116, 2, 24])
+Prefill time: 4.567248106002808
+Decode time: 11.265386581420898
+Round 2 Throughput: 5261.781259931121 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:36:31 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:36:35 model_runner.py:310] # GPU blocks: 3000, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([120, 2, 24])
+Prefill time: 5.610317707061768
+Decode time: 11.647997856140137
+Round 0 Throughput: 5264.42404586087 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:36:52 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:36:54 model_runner.py:310] # GPU blocks: 3000, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([120, 2, 24])
+Prefill time: 4.720595598220825
+Decode time: 11.520658493041992
+Round 1 Throughput: 5322.61242159333 tokens / second.
+INFO 04-14 19:37:11 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:37:13 model_runner.py:310] # GPU blocks: 3000, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([120, 2, 24])
+Prefill time: 4.719276666641235
+Decode time: 11.522812128067017
+Round 2 Throughput: 5321.61761542897 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:37:31 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:37:35 model_runner.py:310] # GPU blocks: 3100, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([124, 2, 24])
+Prefill time: 5.550438642501831
+Decode time: 11.909209251403809
+Round 0 Throughput: 5320.588349938591 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:37:53 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:37:54 model_runner.py:310] # GPU blocks: 3100, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([124, 2, 24])
+Prefill time: 4.879018545150757
+Decode time: 11.760365009307861
+Round 1 Throughput: 5387.928006473431 tokens / second.
+INFO 04-14 19:38:11 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:38:13 model_runner.py:310] # GPU blocks: 3100, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([124, 2, 24])
+Prefill time: 4.878901720046997
+Decode time: 11.756607055664062
+Round 2 Throughput: 5389.65023667034 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:38:33 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:38:37 model_runner.py:310] # GPU blocks: 3200, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([128, 2, 24])
+Prefill time: 5.765279054641724
+Decode time: 12.238589525222778
+Round 0 Throughput: 5344.406711672062 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:38:56 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:38:58 model_runner.py:310] # GPU blocks: 3200, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([128, 2, 24])
+Prefill time: 5.057744979858398
+Decode time: 12.125741481781006
+Round 1 Throughput: 5394.144357957482 tokens / second.
+INFO 04-14 19:39:15 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:39:17 model_runner.py:310] # GPU blocks: 3200, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([128, 2, 24])
+Prefill time: 5.045722484588623
+Decode time: 12.107813596725464
+Round 2 Throughput: 5402.13139866057 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:39:37 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:39:42 model_runner.py:310] # GPU blocks: 3300, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([132, 2, 24])
+Prefill time: 5.934343576431274
+Decode time: 14.517923831939697
+Round 0 Throughput: 4646.118879037261 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:40:03 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:40:05 model_runner.py:310] # GPU blocks: 3300, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([132, 2, 24])
+Prefill time: 5.189796686172485
+Decode time: 14.4065842628479
+Round 1 Throughput: 4682.025854938224 tokens / second.
+INFO 04-14 19:40:25 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:40:27 model_runner.py:310] # GPU blocks: 3300, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([132, 2, 24])
+Prefill time: 5.190517902374268
+Decode time: 14.397140979766846
+Round 2 Throughput: 4685.09686018872 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:40:50 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:40:54 model_runner.py:310] # GPU blocks: 3400, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([136, 2, 24])
+Prefill time: 5.793190956115723
+Decode time: 14.831320524215698
+Round 0 Throughput: 4685.7594296159305 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:41:15 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:41:17 model_runner.py:310] # GPU blocks: 3400, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([136, 2, 24])
+Prefill time: 5.34748387336731
+Decode time: 14.717261552810669
+Round 1 Throughput: 4722.074127080239 tokens / second.
+INFO 04-14 19:41:37 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:41:39 model_runner.py:310] # GPU blocks: 3400, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([136, 2, 24])
+Prefill time: 5.366240739822388
+Decode time: 14.709588289260864
+Round 2 Throughput: 4724.5373992375735 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:42:01 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:42:05 model_runner.py:310] # GPU blocks: 3500, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([140, 2, 24])
+Prefill time: 5.953238487243652
+Decode time: 15.082555532455444
+Round 0 Throughput: 4743.228019022136 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:42:26 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:42:28 model_runner.py:310] # GPU blocks: 3500, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([140, 2, 24])
+Prefill time: 5.50731348991394
+Decode time: 14.903714418411255
+Round 1 Throughput: 4800.1456544029925 tokens / second.
+INFO 04-14 19:42:49 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:42:51 model_runner.py:310] # GPU blocks: 3500, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([140, 2, 24])
+Prefill time: 5.5135838985443115
+Decode time: 14.904055833816528
+Round 2 Throughput: 4800.035694826065 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:43:14 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:43:18 model_runner.py:310] # GPU blocks: 3600, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([144, 2, 24])
+Prefill time: 6.111163854598999
+Decode time: 15.368239164352417
+Round 0 Throughput: 4788.056667590302 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:43:40 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:43:42 model_runner.py:310] # GPU blocks: 3600, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([144, 2, 24])
+Prefill time: 5.975908279418945
+Decode time: 15.171472549438477
+Round 1 Throughput: 4850.155432191285 tokens / second.
+INFO 04-14 19:44:04 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:44:06 model_runner.py:310] # GPU blocks: 3600, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([144, 2, 24])
+Prefill time: 5.665844440460205
+Decode time: 15.141473770141602
+Round 2 Throughput: 4859.764717560373 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:44:29 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:44:34 model_runner.py:310] # GPU blocks: 3700, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([148, 2, 24])
+Prefill time: 6.290656566619873
+Decode time: 15.582802057266235
+Round 0 Throughput: 4853.299151338111 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:44:57 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:44:58 model_runner.py:310] # GPU blocks: 3700, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([148, 2, 24])
+Prefill time: 6.134105682373047
+Decode time: 15.367294549942017
+Round 1 Throughput: 4921.360734917738 tokens / second.
+INFO 04-14 19:45:20 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:45:22 model_runner.py:310] # GPU blocks: 3700, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([148, 2, 24])
+Prefill time: 5.834623575210571
+Decode time: 15.365346431732178
+Round 2 Throughput: 4921.984696929105 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:45:46 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:45:50 model_runner.py:310] # GPU blocks: 3800, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([152, 2, 24])
+Prefill time: 6.429965019226074
+Decode time: 15.75916051864624
+Round 0 Throughput: 4928.688930358852 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:46:12 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:46:14 model_runner.py:310] # GPU blocks: 3800, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([152, 2, 24])
+Prefill time: 5.982207775115967
+Decode time: 15.62471866607666
+Round 1 Throughput: 4971.097506455347 tokens / second.
+INFO 04-14 19:46:37 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:46:39 model_runner.py:310] # GPU blocks: 3800, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([152, 2, 24])
+Prefill time: 5.977534055709839
+Decode time: 15.61712646484375
+Round 2 Throughput: 4973.514184882226 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:47:03 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:47:08 model_runner.py:310] # GPU blocks: 3900, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([156, 2, 24])
+Prefill time: 6.590860366821289
+Decode time: 16.069972276687622
+Round 0 Throughput: 4960.556161981833 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:47:31 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:47:34 model_runner.py:310] # GPU blocks: 3900, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([156, 2, 24])
+Prefill time: 6.137081146240234
+Decode time: 15.994312047958374
+Round 1 Throughput: 4984.0218048125125 tokens / second.
+INFO 04-14 19:47:56 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:47:58 model_runner.py:310] # GPU blocks: 3900, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([156, 2, 24])
+Prefill time: 6.135178804397583
+Decode time: 15.997233629226685
+Round 2 Throughput: 4983.111570888117 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:48:22 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:48:26 model_runner.py:310] # GPU blocks: 4000, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([160, 2, 24])
+Prefill time: 6.883184432983398
+Decode time: 16.228599786758423
+Round 0 Throughput: 5038.019365460681 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:48:50 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:48:52 model_runner.py:310] # GPU blocks: 4000, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([160, 2, 24])
+Prefill time: 6.291787147521973
+Decode time: 16.201691150665283
+Round 1 Throughput: 5046.386777755773 tokens / second.
+INFO 04-14 19:49:15 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:49:17 model_runner.py:310] # GPU blocks: 4000, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([160, 2, 24])
+Prefill time: 6.291485548019409
+Decode time: 16.199402809143066
+Round 2 Throughput: 5047.099634676288 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:49:42 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:49:46 model_runner.py:310] # GPU blocks: 4100, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([164, 2, 24])
+Prefill time: 7.158310651779175
+Decode time: 16.435079097747803
+Round 0 Throughput: 5099.093195814565 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:50:10 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:50:12 model_runner.py:310] # GPU blocks: 4100, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([164, 2, 24])
+Prefill time: 6.4491660594940186
+Decode time: 16.43561100959778
+Round 1 Throughput: 5098.928171946976 tokens / second.
+INFO 04-14 19:50:36 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:50:38 model_runner.py:310] # GPU blocks: 4100, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([164, 2, 24])
+Prefill time: 6.9531567096710205
+Decode time: 16.436952114105225
+Round 2 Throughput: 5098.512146183376 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:51:04 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:51:08 model_runner.py:310] # GPU blocks: 4200, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([168, 2, 24])
+Prefill time: 7.318469285964966
+Decode time: 16.66316056251526
+Round 0 Throughput: 5151.963799299878 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:51:34 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:51:36 model_runner.py:310] # GPU blocks: 4200, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([168, 2, 24])
+Prefill time: 6.6033923625946045
+Decode time: 16.670332193374634
+Round 1 Throughput: 5149.747407800245 tokens / second.
+INFO 04-14 19:52:00 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:52:02 model_runner.py:310] # GPU blocks: 4200, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([168, 2, 24])
+Prefill time: 6.624427795410156
+Decode time: 16.68087077140808
+Round 2 Throughput: 5146.49391967883 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:52:28 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:52:32 model_runner.py:310] # GPU blocks: 4300, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([172, 2, 24])
+Prefill time: 7.496417999267578
+Decode time: 16.77935004234314
+Round 0 Throughput: 5238.105157720781 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:52:56 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:52:58 model_runner.py:310] # GPU blocks: 4300, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([172, 2, 24])
+Prefill time: 6.761157035827637
+Decode time: 16.887741565704346
+Round 1 Throughput: 5204.485138408988 tokens / second.
+INFO 04-14 19:53:22 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:53:24 model_runner.py:310] # GPU blocks: 4300, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([172, 2, 24])
+Prefill time: 6.760843753814697
+Decode time: 16.86727547645569
+Round 2 Throughput: 5210.800056161097 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:53:50 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:53:55 model_runner.py:310] # GPU blocks: 4400, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([176, 2, 24])
+Prefill time: 8.304661989212036
+Decode time: 17.03334403038025
+Round 0 Throughput: 5279.996684126874 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:54:21 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:54:23 model_runner.py:310] # GPU blocks: 4400, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([176, 2, 24])
+Prefill time: 6.9272918701171875
+Decode time: 17.127100229263306
+Round 1 Throughput: 5251.09322629733 tokens / second.
+INFO 04-14 19:54:48 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:54:50 model_runner.py:310] # GPU blocks: 4400, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([176, 2, 24])
+Prefill time: 6.918742895126343
+Decode time: 17.116029739379883
+Round 2 Throughput: 5254.489584876032 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:55:16 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:55:20 model_runner.py:310] # GPU blocks: 4500, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([180, 2, 24])
+Prefill time: 7.5962371826171875
+Decode time: 17.243042469024658
+Round 0 Throughput: 5334.325433880508 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:55:46 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:55:48 model_runner.py:310] # GPU blocks: 4500, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([180, 2, 24])
+Prefill time: 7.077550888061523
+Decode time: 17.38774561882019
+Round 1 Throughput: 5289.932462575393 tokens / second.
+INFO 04-14 19:56:13 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:56:15 model_runner.py:310] # GPU blocks: 4500, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([180, 2, 24])
+Prefill time: 7.077232599258423
+Decode time: 17.350531339645386
+Round 2 Throughput: 5301.278571788102 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:56:42 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:56:46 model_runner.py:310] # GPU blocks: 4600, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([184, 2, 24])
+Prefill time: 7.788376092910767
+Decode time: 17.498103857040405
+Round 0 Throughput: 5373.382211477115 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:57:12 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:57:14 model_runner.py:310] # GPU blocks: 4600, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([184, 2, 24])
+Prefill time: 7.23050856590271
+Decode time: 17.598451614379883
+Round 1 Throughput: 5342.742762844658 tokens / second.
+INFO 04-14 19:57:39 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:57:41 model_runner.py:310] # GPU blocks: 4600, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([184, 2, 24])
+Prefill time: 7.739426851272583
+Decode time: 17.574634075164795
+Round 2 Throughput: 5349.983367953472 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:58:09 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:58:13 model_runner.py:310] # GPU blocks: 4700, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([188, 2, 24])
+Prefill time: 7.833496570587158
+Decode time: 17.735982418060303
+Round 0 Throughput: 5416.559271178307 tokens / second.
+[Warmup Round 1]
+INFO 04-14 19:58:41 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:58:42 model_runner.py:310] # GPU blocks: 4700, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([188, 2, 24])
+Prefill time: 7.390351057052612
+Decode time: 17.836050987243652
+Round 1 Throughput: 5386.169846044277 tokens / second.
+INFO 04-14 19:59:09 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:59:11 model_runner.py:310] # GPU blocks: 4700, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([188, 2, 24])
+Prefill time: 7.388233184814453
+Decode time: 17.825647830963135
+Round 2 Throughput: 5389.313247461894 tokens / second.
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+==================================================
+Running command: python /data03/huhuanqi/projects/qserve/qserve_benchmark.py --model "/data04/huhuanqi/models/Llama-2-7B-QServe-g128" --benchmarking --precision w4a8kv4 --group-size 128 
+[Warmup Round 0]
+INFO 04-14 19:59:38 llm_engine.py:122] Initializing an LLM engine with config: model='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer='/data04/huhuanqi/models/Llama-2-7B-QServe-g128', tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.float32, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=int8, device_config=cuda, ifb_config=False, seed=0)
+[INFO] Using w4a8kv4 precision
+INFO 04-14 19:59:42 model_runner.py:310] # GPU blocks: 4800, # CPU blocks: 10
+[INFO] USE INT4 w/ ZERO_POINTS for KV CACHE
+Running without ifb mode
+Running with benchmarking mode
+torch.Size([192, 2, 24])
+/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/data03/huhuanqi/projects/qserve/qserve_benchmark.py", line 140, in <module>
+    main(args)
+  File "/data03/huhuanqi/projects/qserve/qserve_benchmark.py", line 110, in main
+    time_lis, num_tokens = process_requests(
+  File "/data03/huhuanqi/projects/qserve/qserve_benchmark.py", line 60, in process_requests
+    requests_outputs = engine.step()
+  File "/data03/huhuanqi/projects/qserve/qserve/engine/llm_engine.py", line 621, in step
+    all_outputs = self._run_workers(
+  File "/data03/huhuanqi/projects/qserve/qserve/engine/llm_engine.py", line 737, in _run_workers
+    output = executor(*args, **kwargs)
+  File "/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data03/huhuanqi/projects/qserve/qserve/worker/worker.py", line 247, in execute_model
+    output = self.model_runner.execute_model(
+  File "/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/data03/huhuanqi/projects/qserve/qserve/worker/model_runner.py", line 659, in execute_model
+    output = model(input_tokens, input_metadata)
+  File "/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/data03/huhuanqi/anaconda/envs/QServe/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data03/huhuanqi/projects/qserve/qserve/modeling/models/llama_w4a8_unpad.py", line 473, in forward
+    hidden_states[input_metadata.cu_seqlens[1:] - 1, :]
+RuntimeError: CUDA error: an illegal memory access was encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+
+==================================================
+Benchmarking failed for model: /data04/huhuanqi/models/Llama-2-7B-QServe-g128 with batch size 192
